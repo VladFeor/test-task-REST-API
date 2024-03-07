@@ -11,10 +11,8 @@ const Header = ({ account, changeAccount }) => {
             <div className="container">
                 <div className="header__content">
                     <div className="left__content">
-                        <RouterLink to='/'>
-                            <a className="logo">
-                                <img src={logoImage} alt="error" href/>
-                            </a>
+                        <RouterLink className="logo" to='/'>
+                                <img src={logoImage} alt="error" />
                         </RouterLink>
                     </div>
                     <div className="right__content">

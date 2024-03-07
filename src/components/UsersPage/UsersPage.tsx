@@ -28,7 +28,7 @@ const UsersPage = () => {
         fetchUsers();
     }, [currentPage]);
 
-    const handlePageChange = newPage => {
+    const handlePageChange = (newPage) => {
         setCurrentPage(newPage);
     };
 
@@ -48,7 +48,7 @@ const UsersPage = () => {
                 </button>
             </div>
             <div className="list__content">
-                {users.length != 0 ?
+                {users.length !== 0 ?
                     users.map((item) => (
                         <UserItem key={item.id} item={item} />
                     ))

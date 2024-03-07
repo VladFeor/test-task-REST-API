@@ -121,7 +121,7 @@ const RegisterUser = ({ changeAccount, fetchDataUsers, account }) => {
                 photo: userData.photo,
             };
 
-            const response = await axios.post('https://frontend-test-assignment-api.abz.agency/api/v1/users', formValue, {
+            await axios.post('https://frontend-test-assignment-api.abz.agency/api/v1/users', formValue, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                     'Token': token,
