@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import UserItem from '../UserItem/UserItem';
 
@@ -9,24 +9,24 @@ const UsersPage = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(0);
 
-    const fetchUsers = async () => {
+    const fetchUsers = useCallback(async () => {
         try {
             const response = await axios.get(`${API_URL}?page=${currentPage}&count=6`);
             const sortedUsers = response.data.users.sort((a, b) => a.registration_timestamp - b.registration_timestamp);
-
+    
             setUsers(sortedUsers);
-
+    
             const { total_pages: fetchedTotalPages } = response.data;
-
+    
             setTotalPages(fetchedTotalPages);
         } catch (error) {
             console.error('Error fetching users:', error);
         }
-    };
-
+    }, [currentPage]);
+    
     useEffect(() => {
         fetchUsers();
-    }, [fetchUsers, currentPage]);  
+    }, [fetchUsers]);
 
     const handlePageChange = (newPage) => {
         setCurrentPage(newPage);
