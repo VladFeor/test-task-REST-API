@@ -1,0 +1,201 @@
+.form {
+    max-width: 380px;
+    width: 380px;
+}
+
+.form .link>input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(126, 126, 126, 1);
+    border-radius: 4px;
+    background: transparent;
+    margin-bottom: 50px;
+    border: 1px solid rgba(208, 207, 207, 1)
+}
+
+.form .link:nth-child(3)>input {
+    margin-bottom: 0;
+}
+
+.register__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.link {
+    position: relative;
+}
+
+.lable {
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    color: rgba(126, 126, 126, 1);
+    font-size: 12px;
+}
+
+input[type="file"] {
+    border: none;
+    padding: 0.5rem;
+    width: 300px;
+    font-size: 1rem;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+
+.element__form {
+    font-size: 16px;
+    margin-top: 43px;
+    margin-bottom: 11px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group input[type='radio'] {
+    display: none;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 30px;
+    position: relative;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.radio-group label::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 189, 211, 1);
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+    opacity: 0;
+}
+
+.radio-group label::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(208, 207, 207, 1);
+    border-radius: 50%;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.radio-group input[type='radio']:checked+label::before {
+    border-color: rgba(0, 189, 211, 1);
+}
+
+.radio-group input[type='radio']:checked+label::before {
+    transition: 0.3s;
+}
+
+.radio-group input[type='radio']:checked+label::after {
+    opacity: 1;
+}
+
+.file-input {
+    width: 100%;
+    margin-top: 45px;
+    height: 50px;
+    border: 1px solid rgba(208, 207, 207, 1);
+    border-radius: 4px;
+    position: relative;
+}
+
+.file-input input {
+    width: 85px;
+    height: 100%;
+    border-radius: 4px;
+    opacity: 0;
+}
+
+.subfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 85px;
+    height: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.87);
+
+}
+
+.subfile span {
+    font-size: 16px;
+}
+
+.textfile {
+    position: absolute;
+    left: 100px;
+    top: 15px;
+    max-width: 60%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    color: rgba(126, 126, 126, 1);
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.error {
+    border: 1px solid rgba(203, 61, 64, 1);
+}
+
+.error-text {
+    color: rgba(203, 61, 64, 1);
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-size: 12px;
+}
+
+
+.link label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(126, 126, 126, 1);
+    pointer-events: none;
+    transition: .3s;
+    background-color: rgb(248 248 248);
+    padding: 0 2px;
+}
+
+.link>input:focus+label,
+.link>input:not(:placeholder-shown):not([value=""])+label {
+    transform: translateY(-27px) translateX(-10px)scale(0.75);
+}

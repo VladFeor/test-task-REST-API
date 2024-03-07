@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    background: #fff;
+
+    .logo {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .header__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 0;
+
+        .right__content {
+            display: flex;
+            align-items: center;
+
+            &>.btn:nth-child(1) {
+                margin-right: 10px;
+            }
+
+            .account__name {
+                font-size: 14px;
+                text-transform: uppercase;
+                margin-right: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "watchFolder": "less",
+    "outputFolder": "css",
+    "runOnce": false,
+    "sourceMap": false,
+    "plugins": []
+  }
+  
