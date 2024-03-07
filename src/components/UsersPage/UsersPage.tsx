@@ -26,7 +26,7 @@ const UsersPage = () => {
 
     useEffect(() => {
         fetchUsers();
-    }, [currentPage]);
+    }, [fetchUsers, currentPage]);  
 
     const handlePageChange = (newPage) => {
         setCurrentPage(newPage);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Element, animateScroll } from 'react-scroll';
+import { Element } from 'react-scroll';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
