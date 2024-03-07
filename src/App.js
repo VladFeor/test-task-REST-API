@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainPage from './components/MainPage/MainPage.tsx';
 import UsersPage from './components/UsersPage/UsersPage.tsx';
 import Header from './components/Header/Header.tsx';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import { useState } from 'react';
 
 function App() {
