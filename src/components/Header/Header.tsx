@@ -1,5 +1,5 @@
 import React from 'react'
-import logoImage from '../../img/Logo.png';
+import logoImage from '../../img/Logo.webp';
 import { Link } from 'react-scroll';
 import { Link as RouterLink } from 'react-router-dom';
 

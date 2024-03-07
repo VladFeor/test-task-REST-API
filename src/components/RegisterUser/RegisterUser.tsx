@@ -3,7 +3,7 @@ import { Element } from 'react-scroll';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import doneImage from '../../img/success-image.png'
+import doneImage from '../../img/success-image.webp'
 
 interface PositionsResponse {
     success: boolean;
